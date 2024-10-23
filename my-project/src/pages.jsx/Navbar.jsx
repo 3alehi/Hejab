@@ -5,7 +5,7 @@ export default function Navbar() {
   const [searchValue , setSearchValue] = useState("")
   const [open , setopen] = useState(false)
   return (
-    <div className='bg-[#fff] flex justify-center fixed w-full top-0'>
+    <div className='bg-[#fff] flex justify-center fixed w-full z-10 top-0'>
 <div className='w-[70%] p-5 grid grid-cols-2'>
 <div   className='flex items-center  '>
  
