@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useState } from 'react'
 export default function Navbar() {
 
   const [searchValue , setSearchValue] = useState("")
   const [open , setopen] = useState(false)
+  const dropdownRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setopen(false); 
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
     <div className='bg-[#fff] flex justify-center fixed w-full z-10 top-0'>
 <div className='w-[70%] p-5 grid grid-cols-2'>
@@ -21,7 +35,7 @@ export default function Navbar() {
 <path d="M10.5156 10.5625C10.2344 10.8438 9.71875 10.8438 9.4375 10.5625L0.4375 1.5625C0.15625 1.28125 0.15625 0.765625 0.4375 0.484375C0.71875 0.203125 1.23438 0.203125 1.51562 0.484375L10 8.96875L18.4375 0.484375C18.7188 0.203125 19.2344 0.203125 19.5156 0.484375C19.7969 0.765625 19.7969 1.28125 19.5156 1.5625L10.5156 10.5625Z" fill="#A3A3A3"/>
 </svg>
 {open&&(
-<div className='absolute top-0 right-0 w-full   bg-bg rounded-md'>
+<div           ref={dropdownRef} className='absolute top-0 right-0 w-full   bg-bg rounded-md'>
   <div>
     <div className='flex items-center flex-row-reverse justify-between p-3'>
     <div className='flex items-center flex-row-reverse'>
