@@ -18,7 +18,7 @@ export default function Navbar() {
     };
   }, []);
   return (
-    <div className="bg-[#fff] flex justify-center fixed w-full z-10 top-0">
+    <div className="bg-[#fff] flex justify-center fixed w-full z-[200] top-0">
       <div className="w-[70%] p-5 grid grid-cols-2">
         <div className="flex items-center  ">
           <div className="w-[250px]    bg-bg  relative p-3 rounded-full flex-row-reverse justify-between flex items-center h-full">
