@@ -5,7 +5,7 @@ import Filters from '../components/Filters'
 
 export default function Footer() {
   return (
-    <div className='grid gap-9 grid-cols-[300px_700px_auto] px-[300px] mt-[150px]'>
+    <div className='grid gap-9 grid-cols-[300px_650px_auto] px-[300px] mt-[150px]'>
         <div className=''>
             <ExperienceAndTopics/>
         </div>

@@ -3,24 +3,73 @@ import { useState } from 'react'
 export default function Navbar() {
 
   const [searchValue , setSearchValue] = useState("")
+  const [open , setopen] = useState(false)
   return (
     <div className='bg-[#fff] flex justify-center fixed w-full top-0'>
 <div className='w-[70%] p-5 grid grid-cols-2'>
-<div   className='flex items-center '>
+<div   className='flex items-center  '>
  
-<div  className='w-[250px] z-50 bg-bg mx-7 relative p-3 rounded-full flex-row-reverse justify-between flex items-center h-full'>
+<div  className='w-[250px]    bg-bg  relative p-3 rounded-full flex-row-reverse justify-between flex items-center h-full'>
 
   <div  className='flex flex-row-reverse items-center'>
   <img className='w-9 mx-3 h-9 rounded-full' src="src/assets/profile.jpeg" alt="" />
   <p>همدل 1</p>
   </div>
-  <svg className='cursor-pointer' width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg onClick={e=>{
+    setopen(true)
+  }} className='cursor-pointer' width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.5156 10.5625C10.2344 10.8438 9.71875 10.8438 9.4375 10.5625L0.4375 1.5625C0.15625 1.28125 0.15625 0.765625 0.4375 0.484375C0.71875 0.203125 1.23438 0.203125 1.51562 0.484375L10 8.96875L18.4375 0.484375C18.7188 0.203125 19.2344 0.203125 19.5156 0.484375C19.7969 0.765625 19.7969 1.28125 19.5156 1.5625L10.5156 10.5625Z" fill="#A3A3A3"/>
+</svg>
+{open&&(
+<div className='absolute top-0 right-0 w-full   bg-bg rounded-md'>
+  <div>
+    <div className='flex items-center flex-row-reverse justify-between p-3'>
+    <div className='flex items-center flex-row-reverse'>
+    <img className='w-9 mx-3 h-9 rounded-full' src="src/assets/profile.jpeg" alt="" />
+    <p>همدل 1</p>
+    </div>
+    <svg className='cursor-pointer' onClick={e=>{
+      setopen(false)
+    }} width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.4375 0.484375C9.71875 0.203125 10.2344 0.203125 10.5156 0.484375L19.5156 9.48438C19.7969 9.76562 19.7969 10.2812 19.5156 10.5625C19.2344 10.8438 18.7188 10.8438 18.4375 10.5625L10 2.07812L1.51562 10.5625C1.23438 10.8438 0.71875 10.8438 0.4375 10.5625C0.15625 10.2812 0.15625 9.76562 0.4375 9.48438L9.4375 0.484375Z" fill="#A3A3A3"/>
+</svg>
+    </div>
+    
+<ul className='flex flex-col items-end py-5 p-5'>
+    <li className='flex items-center mb-5 cursor-pointer '>
+      <p className='mr-3 text-[#2BAE66]'>مشاهده پروفایل</p>
+      <svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 6.5C15 4.90625 14.1094 3.45312 12.75 2.60938C11.3438 1.8125 9.60938 1.8125 8.25 2.60938C6.84375 3.45312 6 4.90625 6 6.5C6 8.14062 6.84375 9.59375 8.25 10.4375C9.60938 11.2344 11.3438 11.2344 12.75 10.4375C14.1094 9.59375 15 8.14062 15 6.5ZM4.5 6.5C4.5 4.39062 5.625 2.42188 7.5 1.34375C9.32812 0.265625 11.625 0.265625 13.5 1.34375C15.3281 2.42188 16.5 4.39062 16.5 6.5C16.5 8.65625 15.3281 10.625 13.5 11.7031C11.625 12.7812 9.32812 12.7812 7.5 11.7031C5.625 10.625 4.5 8.65625 4.5 6.5ZM1.5 23H19.5C19.4062 19.2969 16.3594 16.25 12.6094 16.25H8.34375C4.59375 16.25 1.54688 19.2969 1.5 23ZM0 23.1406C0 18.5 3.70312 14.75 8.34375 14.75H12.6094C17.25 14.75 21 18.5 21 23.1406C21 23.8906 20.3438 24.5 19.5938 24.5H1.35938C0.609375 24.5 0 23.8906 0 23.1406Z" fill="#A3A3A3"/>
+</svg>
+
+    </li>
+    <li className='flex items-center mb-5 cursor-pointer '>
+      <p className='mr-3 text-[#2BAE66]'>دنبال شده ها </p>
+      <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6.5C6 8.14062 6.84375 9.59375 8.25 10.4375C9.60938 11.2344 11.3438 11.2344 12.75 10.4375C14.1094 9.59375 15 8.14062 15 6.5C15 4.90625 14.1094 3.45312 12.75 2.60938C11.3438 1.8125 9.60938 1.8125 8.25 2.60938C6.84375 3.45312 6 4.90625 6 6.5ZM12.6094 16.25H8.34375C4.59375 16.25 1.54688 19.2969 1.5 23H19.5C19.4062 19.2969 16.3594 16.25 12.6094 16.25ZM10.5 12.5C8.34375 12.5 6.375 11.375 5.29688 9.5C4.21875 7.67188 4.21875 5.375 5.29688 3.5C6.375 1.67188 8.34375 0.5 10.5 0.5C12.6094 0.5 14.5781 1.67188 15.6562 3.5C16.7344 5.375 16.7344 7.67188 15.6562 9.5C14.5781 11.375 12.6094 12.5 10.5 12.5ZM8.34375 14.75H12.6094C17.25 14.75 21 18.5 21 23.1406C21 23.8906 20.3438 24.5 19.5938 24.5H1.35938C0.609375 24.5 0 23.8906 0 23.1406C0 18.5 3.70312 14.75 8.34375 14.75ZM24 14.75V11H20.25C19.8281 11 19.5 10.6719 19.5 10.25C19.5 9.875 19.8281 9.5 20.25 9.5H24V5.75C24 5.375 24.3281 5 24.75 5C25.125 5 25.5 5.375 25.5 5.75V9.5H29.25C29.625 9.5 30 9.875 30 10.25C30 10.6719 29.625 11 29.25 11H25.5V14.75C25.5 15.1719 25.125 15.5 24.75 15.5C24.3281 15.5 24 15.1719 24 14.75Z" fill="#A3A3A3"/>
 </svg>
 
 
+    </li>
+    <li className='flex items-center mb-5 cursor-pointer '>
+      <p className='mr-3 text-[#2BAE66]'> خروج</p>
+      <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.75 1.25V13.25C11.75 13.6719 11.375 14 11 14C10.5781 14 10.25 13.6719 10.25 13.25V1.25C10.25 0.875 10.5781 0.5 11 0.5C11.375 0.5 11.75 0.875 11.75 1.25ZM6.6875 4.20312C3.64062 5.75 1.625 8.89062 1.625 12.5C1.625 17.7031 5.79688 21.875 11 21.875C16.1562 21.875 20.375 17.7031 20.375 12.5C20.375 8.89062 18.3125 5.75 15.2656 4.20312C14.8906 4.01562 14.75 3.54688 14.9375 3.17188C15.125 2.79688 15.5938 2.65625 15.9688 2.84375C19.4844 4.67188 21.875 8.32812 21.875 12.5C21.875 18.5469 17 23.375 11 23.375C4.95312 23.375 0.125 18.5469 0.125 12.5C0.125 8.32812 2.51562 4.67188 5.98438 2.84375C6.35938 2.65625 6.82812 2.79688 7.01562 3.17188C7.20312 3.54688 7.0625 4.01562 6.6875 4.20312Z" fill="#A3A3A3"/>
+</svg>
+
+
+    </li>
+</ul>
+    
+  </div>
+
 </div>
-<div  className='w-[400px] focus-within:border focus-within:bg-[#fff] focus-within:border-[#2BAE66]   bg-bg flex justify-between items-center p-3  rounded-md '>
+
+
+)}
+
+</div>
+<div  className='w-[400px] mx-7 focus-within:border focus-within:bg-[#fff] focus-within:border-[#2BAE66]   bg-bg flex justify-between items-center p-3  rounded-md '>
 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18 9.75C18 6.84375 16.4062 4.125 13.875 2.625C11.2969 1.17188 8.15625 1.17188 5.625 2.625C3.04688 4.125 1.5 6.84375 1.5 9.75C1.5 12.7031 3.04688 15.4219 5.625 16.9219C8.15625 18.375 11.2969 18.375 13.875 16.9219C16.4062 15.4219 18 12.7031 18 9.75ZM16.0781 17.1562C14.3906 18.6562 12.1406 19.5 9.75 19.5C4.35938 19.5 0 15.1406 0 9.75C0 4.40625 4.35938 0 9.75 0C15.0938 0 19.5 4.40625 19.5 9.75C19.5 12.1875 18.6094 14.3906 17.1562 16.125L23.7656 22.7344C24.0469 23.0156 24.0469 23.5312 23.7656 23.8125C23.4844 24.0938 22.9688 24.0938 22.6875 23.8125L16.0781 17.1562Z" fill="#A3A3A3"/>
 </svg>
