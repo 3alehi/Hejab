@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 export default function ImgPost2() {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const dropdownRef = useRef(null);
     useEffect(() => {
       const handleClickOutside = (event) => {
