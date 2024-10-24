@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function InputFilters({content,filters}) {
-    const [open,setOpen] = useState(true)
+    const [open,setOpen] = useState(false)
   return (
     <div className='flex flex-col items-center justify-end p-3 my-2'>
         <p className='justify-end flex w-full'>{content}</p>

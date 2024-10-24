@@ -2,9 +2,8 @@ import React from 'react'
 import InputFilters from './InputFilters'
 
 export default function Filters() {
-    const arrFilters = ["تست" , "تست" , "تست" , "تست"]
   return (
-    <div className='bg-[#fff] rounded-md p-4'>
+    <div className='bg-[#fff] rounded-md p-4 max-lg:hidden'>
        <div className='flex items-center flex-row-reverse justify-between'>
        <div className='flex items-center'>
             <p>فیلتر ها</p>
