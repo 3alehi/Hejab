@@ -29,7 +29,7 @@ export default function Navbar() {
               <img
                 className="w-9 mx-3 h-9 rounded-full"
                 src="src/assets/profile.jpeg"
-                alt=""
+                alt="img"
               />
               <p> امیر</p>
             </div>
