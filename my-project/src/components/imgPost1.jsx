@@ -93,14 +93,14 @@ export default function ImgPost1() {
         <h1 className={`text-[#737373] text-[18px] mt-5 ${open ? "blur-sm" :""}`}>
           انسان‌های بامحبت در کجا ساکن هستند؟
         </h1>
-        <div className={`mt-5 grid gap-4 grid-cols-2 ${open ? "blur-sm" :""}`}>
-        <img className="h-80" src="https://s3-alpha-sig.figma.com/img/79bf/9477/3c592b8abf004a409a787e3f0208f35e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YANSd0s~W3Ve~TmzJFUNZutTOR3bdH-gpfcviSYeilurTOsX~XqtvDixYxAXqQ5654yofMfkevK~HumEd1CaWRDF~UmdGkqyiwod9ekOW17zpdr9M00lcD9wMCnlGBzkyXmfX~RSLFhbo7FWssDv0NeE7Z66uVYceq6O~WV4CXZ04WS7vQU0Ycf0QdElToHxXmSt-NFC0okbw98~6CLtbmUayyjByt1u6xHH1aB12hqE9LmjXSZ80mVYn3UWBj3Jd6QwFYU9hdnNcOEYGEEIr7bd1p5uBXlkyL-NtQFirYlQAs1~yILxVMVQfAW9W3HbvIw9uP7WC3syiY1DT5HaWg__" alt="" />
+        <div className={`mt-5 grid gap-4 max-md:gap-1 grid-cols-2 ${open ? "blur-sm" :""}`}>
+        <img className="h-fit" src="https://s3-alpha-sig.figma.com/img/79bf/9477/3c592b8abf004a409a787e3f0208f35e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YANSd0s~W3Ve~TmzJFUNZutTOR3bdH-gpfcviSYeilurTOsX~XqtvDixYxAXqQ5654yofMfkevK~HumEd1CaWRDF~UmdGkqyiwod9ekOW17zpdr9M00lcD9wMCnlGBzkyXmfX~RSLFhbo7FWssDv0NeE7Z66uVYceq6O~WV4CXZ04WS7vQU0Ycf0QdElToHxXmSt-NFC0okbw98~6CLtbmUayyjByt1u6xHH1aB12hqE9LmjXSZ80mVYn3UWBj3Jd6QwFYU9hdnNcOEYGEEIr7bd1p5uBXlkyL-NtQFirYlQAs1~yILxVMVQfAW9W3HbvIw9uP7WC3syiY1DT5HaWg__" alt="" />
 
-            <img className="h-80" src="https://s3-alpha-sig.figma.com/img/79bf/9477/3c592b8abf004a409a787e3f0208f35e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YANSd0s~W3Ve~TmzJFUNZutTOR3bdH-gpfcviSYeilurTOsX~XqtvDixYxAXqQ5654yofMfkevK~HumEd1CaWRDF~UmdGkqyiwod9ekOW17zpdr9M00lcD9wMCnlGBzkyXmfX~RSLFhbo7FWssDv0NeE7Z66uVYceq6O~WV4CXZ04WS7vQU0Ycf0QdElToHxXmSt-NFC0okbw98~6CLtbmUayyjByt1u6xHH1aB12hqE9LmjXSZ80mVYn3UWBj3Jd6QwFYU9hdnNcOEYGEEIr7bd1p5uBXlkyL-NtQFirYlQAs1~yILxVMVQfAW9W3HbvIw9uP7WC3syiY1DT5HaWg__" alt="" />
+            <img className="h-fit" src="https://s3-alpha-sig.figma.com/img/79bf/9477/3c592b8abf004a409a787e3f0208f35e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YANSd0s~W3Ve~TmzJFUNZutTOR3bdH-gpfcviSYeilurTOsX~XqtvDixYxAXqQ5654yofMfkevK~HumEd1CaWRDF~UmdGkqyiwod9ekOW17zpdr9M00lcD9wMCnlGBzkyXmfX~RSLFhbo7FWssDv0NeE7Z66uVYceq6O~WV4CXZ04WS7vQU0Ycf0QdElToHxXmSt-NFC0okbw98~6CLtbmUayyjByt1u6xHH1aB12hqE9LmjXSZ80mVYn3UWBj3Jd6QwFYU9hdnNcOEYGEEIr7bd1p5uBXlkyL-NtQFirYlQAs1~yILxVMVQfAW9W3HbvIw9uP7WC3syiY1DT5HaWg__" alt="" />
         </div>
      <h1 className="mt-6 text-[#737373]">انسان‌های بامحبت در کجا ساکن هستند؟</h1>
   
-        <div className={`mt-6 flex items-center justify-between p-3 flex-row-reverse ${open ? "blur-sm" :""}`}>
+        <div className={`mt-6 flex items-center justify-between  max-md:text-[13px] flex-row-reverse ${open ? "blur-sm" :""}`}>
           <p className="text-[#737373]"> 2 روز پیش </p>
           <div className="flex items-center text-[#737373]">
             <p className="mx-2">20  پسند</p>

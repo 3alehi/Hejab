@@ -5,3 +5,13 @@ body{
   background-color: #F5F5F5;
   
 }
+.hide-scrollbar {
+  /* مخفی کردن نوار اسکرول در مرورگرهای Webkit (Chrome, Safari) */
+  scrollbar-width: none; /* مخفی کردن در Firefox */
+  -ms-overflow-style: none;  /* مخفی کردن در Internet Explorer و Edge */
+
+  /* مخفی کردن نوار اسکرول در مرورگرهای Webkit (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

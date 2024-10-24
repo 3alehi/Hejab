@@ -8,8 +8,9 @@ import ImgPost2 from '../components/ImgPost2'
 
 export default function Footer() {
   return (
-    <div className='grid gap-9 grid-cols-[300px_650px_auto] max-lg:grid-cols-1 max-2xl:grid-cols-[auto_400px_auto]  p-5 px-[300px] max-2xl:px-[50px] mt-[150px] '>
-        <div className='w-full overflow-auto sticky top-2'>
+    <div className='grid gap-9 grid-cols-[300px_650px_auto] max-lg:grid-cols-1 max-2xl:grid-cols-[auto_400px_auto] max-md:px-4
+      p-5 px-[300px] max-2xl:px-[50px] max-md:mt-0  max-lg:mt-[100px] mt-[150px] '>
+        <div >
             <ExperienceAndTopics/>
         </div>
         <div className=''>
