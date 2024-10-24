@@ -24,7 +24,7 @@ export default function ImgPost({img}) {
             <img
               src="src/assets/profile.jpeg"
               className="w-9 h-9 rounded-full"
-              alt=""
+              alt="img"
             />
           </div>
           <svg

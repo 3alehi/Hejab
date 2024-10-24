@@ -19,7 +19,7 @@ export default function Navbar() {
   }, []);
   return (
     <div className="bg-[#fff] flex justify-center fixed w-full z-[200] top-0">
-      <div className="w-[70%] max-md:w-full p-5 grid grid-cols-2">
+      <div className="w-[70%] max-2xl:w-full p-5 grid grid-cols-2">
         <div className="flex items-center  ">
           <div className="w-[250px]    bg-bg  relative p-3 rounded-full flex-row-reverse justify-between flex items-center h-full">
             <div className="flex flex-row-reverse items-center">
@@ -130,7 +130,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <div className="w-[400px] mx-7 focus-within:border focus-within:bg-[#fff] focus-within:border-[#2BAE66]   bg-bg flex justify-between items-center p-3  rounded-md ">
+          <div className="w-[400px] max-xl:w-[200px] mx-7 focus-within:border focus-within:bg-[#fff] focus-within:border-[#2BAE66]   bg-bg flex justify-between items-center p-3  rounded-md ">
             <svg
               width="25"
               height="25"
@@ -176,7 +176,7 @@ export default function Navbar() {
         </div>
         <ul className="flex flex-row-reverse">
           <li className="flex items-center mx-5 cursor-pointer">
-            <p className="mx-3 ">شبکه مردمی فعالان حجاب</p>
+            <p className="mx-3 max-xl:hidden ">شبکه مردمی فعالان حجاب</p>
             <img src="./src/assets/Vector.png" className="w-9 h-9" alt="" />
           </li>
           <li className="flex items-center mx-5 cursor-pointer">

@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function ExperienceAndTopics() {
   return (
-    <div className='w-full'>
+    <div className='w-full max-lg:hidden'>
         
-        <button className='bg-[#2BAE66] w-full flex flex-row-reverse justify-end justify-center py-2  text-[#fff] rounded-full'>
+        <button className='bg-[#2BAE66] w-full flex flex-row-reverse  justify-center py-2  text-[#fff] rounded-full'>
         <svg className='ml-3' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.0781 1.1676L22.9688 2.05823C24 3.08948 24 4.7301 22.9688 5.76135L21.5625 7.1676L16.9688 2.57385L18.375 1.1676C19.4062 0.136353 21.0469 0.136353 22.0781 1.1676ZM8.0625 11.4801L15.8906 3.65198L20.4844 8.24573L12.6562 16.0739C12.375 16.3551 12 16.5895 11.625 16.7301L7.45312 18.0895C7.07812 18.2301 6.60938 18.1364 6.32812 17.8082C6 17.527 5.90625 17.0582 6.04688 16.6832L7.40625 12.5114C7.54688 12.1364 7.78125 11.7614 8.0625 11.4801ZM4.5 3.13635H9C9.79688 3.13635 10.5 3.83948 10.5 4.63635C10.5 5.4801 9.79688 6.13635 9 6.13635H4.5C3.65625 6.13635 3 6.83948 3 7.63635V19.6364C3 20.4801 3.65625 21.1364 4.5 21.1364H16.5C17.2969 21.1364 18 20.4801 18 19.6364V15.1364C18 14.3395 18.6562 13.6364 19.5 13.6364C20.2969 13.6364 21 14.3395 21 15.1364V19.6364C21 22.1207 18.9844 24.1364 16.5 24.1364H4.5C2.01562 24.1364 0 22.1207 0 19.6364V7.63635C0 5.15198 2.01562 3.13635 4.5 3.13635Z" fill="#FFD53E"/>
 </svg>
@@ -12,7 +12,7 @@ export default function ExperienceAndTopics() {
 <span className='text-[18px]'>            ثبت تجربه   
 </span>            
         </button>
-        <div className='bg-[#fff] mt-4  rounded-md p-3'>
+        <div className='bg-[#fff] mt-4  rounded-md  p-3'>
             <div className='flex items-center justify-end px-3 '>
             <p  className=''>موضاعات داغ</p>
 
