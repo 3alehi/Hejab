@@ -99,7 +99,7 @@ export default function ImgPost2() {
 <img className="h-40 w-full" src="https://s3-alpha-sig.figma.com/img/79bf/9477/3c592b8abf004a409a787e3f0208f35e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YANSd0s~W3Ve~TmzJFUNZutTOR3bdH-gpfcviSYeilurTOsX~XqtvDixYxAXqQ5654yofMfkevK~HumEd1CaWRDF~UmdGkqyiwod9ekOW17zpdr9M00lcD9wMCnlGBzkyXmfX~RSLFhbo7FWssDv0NeE7Z66uVYceq6O~WV4CXZ04WS7vQU0Ycf0QdElToHxXmSt-NFC0okbw98~6CLtbmUayyjByt1u6xHH1aB12hqE9LmjXSZ80mVYn3UWBj3Jd6QwFYU9hdnNcOEYGEEIr7bd1p5uBXlkyL-NtQFirYlQAs1~yILxVMVQfAW9W3HbvIw9uP7WC3syiY1DT5HaWg__" alt="" />
 
 </div>
-            <img className="h-80" src="https://s3-alpha-sig.figma.com/img/79bf/9477/3c592b8abf004a409a787e3f0208f35e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YANSd0s~W3Ve~TmzJFUNZutTOR3bdH-gpfcviSYeilurTOsX~XqtvDixYxAXqQ5654yofMfkevK~HumEd1CaWRDF~UmdGkqyiwod9ekOW17zpdr9M00lcD9wMCnlGBzkyXmfX~RSLFhbo7FWssDv0NeE7Z66uVYceq6O~WV4CXZ04WS7vQU0Ycf0QdElToHxXmSt-NFC0okbw98~6CLtbmUayyjByt1u6xHH1aB12hqE9LmjXSZ80mVYn3UWBj3Jd6QwFYU9hdnNcOEYGEEIr7bd1p5uBXlkyL-NtQFirYlQAs1~yILxVMVQfAW9W3HbvIw9uP7WC3syiY1DT5HaWg__" alt="" />
+            <img className="h-80 w-full" src="https://s3-alpha-sig.figma.com/img/79bf/9477/3c592b8abf004a409a787e3f0208f35e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YANSd0s~W3Ve~TmzJFUNZutTOR3bdH-gpfcviSYeilurTOsX~XqtvDixYxAXqQ5654yofMfkevK~HumEd1CaWRDF~UmdGkqyiwod9ekOW17zpdr9M00lcD9wMCnlGBzkyXmfX~RSLFhbo7FWssDv0NeE7Z66uVYceq6O~WV4CXZ04WS7vQU0Ycf0QdElToHxXmSt-NFC0okbw98~6CLtbmUayyjByt1u6xHH1aB12hqE9LmjXSZ80mVYn3UWBj3Jd6QwFYU9hdnNcOEYGEEIr7bd1p5uBXlkyL-NtQFirYlQAs1~yILxVMVQfAW9W3HbvIw9uP7WC3syiY1DT5HaWg__" alt="" />
         </div>
      <h1 className="mt-6 text-[#737373]">انسان‌های بامحبت در کجا ساکن هستند؟</h1>
   
