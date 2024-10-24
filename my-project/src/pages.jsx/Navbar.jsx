@@ -9,7 +9,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setopen(false);
+        setopen(false)
       }
     };
 
