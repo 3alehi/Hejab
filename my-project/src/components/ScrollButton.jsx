@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 export default function ScrollButton() {
-    const [showButton, setShowButton] = useState(false);
+    const [showButton, setShowButton] = useState(true);
     let lastScrollY = window.pageYOffset;
   
     const handleScroll = () => {
