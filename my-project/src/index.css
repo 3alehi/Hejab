@@ -6,11 +6,9 @@ body{
   
 }
 .hide-scrollbar {
-  /* مخفی کردن نوار اسکرول در مرورگرهای Webkit (Chrome, Safari) */
-  scrollbar-width: none; /* مخفی کردن در Firefox */
-  -ms-overflow-style: none;  /* مخفی کردن در Internet Explorer و Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
 
-  /* مخفی کردن نوار اسکرول در مرورگرهای Webkit (Chrome, Safari) */
   &::-webkit-scrollbar {
     display: none;
   }

@@ -50,12 +50,11 @@ export default function ExperienceAndTopics() {
 
         </div>
     </div>
-    <ul className="flex overflow-x-auto hide-scrollbar space-x-4 lg:hidden  justify-end">
+    <ul className="flex overflow-x-auto hide-scrollbar lg:hidden space-x-4">
     <li className='flex items-center bg-[#FAFAFA] rounded-lg whitespace-nowrap px-4 py-2'>      <p className='mr-3 text-[#2BAE66]'> چادر</p>
                 <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 1.5C0 0.6875 0.65625 0 1.5 0H10.5C11.3125 0 12 0.6875 12 1.5V15.3125C12 15.7188 11.6875 16 11.2812 16C11.1562 16 11.0312 15.9688 10.9062 15.9062L6 12.625L1.0625 15.9062C0.9375 15.9688 0.8125 16 0.6875 16C0.28125 16 0 15.7188 0 15.3125V1.5ZM1.5 1C1.21875 1 1 1.25 1 1.5V14.75L5.71875 11.5938C5.875 11.5 6.09375 11.5 6.25 11.5938L11 14.75V1.5C11 1.25 10.75 1 10.5 1H1.5Z" fill="#A3A3A3"/>
 </svg>
-
       </li>
       <li className='flex items-center bg-[#FAFAFA] rounded-lg whitespace-nowrap px-4 py-2'>      <p className='mr-3 text-[#2BAE66]'>حجاب فاطمی</p>
                 <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
