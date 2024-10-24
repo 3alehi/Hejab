@@ -98,7 +98,7 @@ export default function ImgPost({img}) {
         </div>
      <h1 className="mt-6 text-[#737373]">انسان‌های بامحبت در کجا ساکن هستند؟</h1>
   
-        <div className={`mt-6 flex items-center justify-between p-3 flex-row-reverse ${open ? "blur-sm" :""}`}>
+        <div className={`mt-6 flex items-center justify-between max-md:text-[13px] flex-row-reverse ${open ? "blur-sm" :""}`}>
           <p className="text-[#737373]"> 2 روز پیش </p>
           <div className="flex items-center text-[#737373]">
             <p className="mx-2">20  پسند</p>
