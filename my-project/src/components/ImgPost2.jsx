@@ -17,7 +17,7 @@ export default function ImgPost2() {
       };
     }, []);
     return (
-      <div className="text-right bg-[#ffffff] p-3 rounded-md mt-5">
+      <div className="text-right bg-[#ffffff] p-3 rounded-md mt-5 mb-8">
         <div className="w-full relative flex items-center justify-between flex-row-reverse">
           <div className={`flex items-center ${open ? "blur-sm" :""}`}>
             <p className="mr-2">کاربر 1</p>
