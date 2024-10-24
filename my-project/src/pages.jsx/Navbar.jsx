@@ -24,7 +24,7 @@ export default function Navbar() {
        <div className="bg-[#fff] flex justify-center fixed w-full z-[200] max-md:hidden top-0">
       <div className="w-[70%] max-2xl:w-full p-5 grid grid-cols-2">
         <div className="flex items-center  ">
-          <div className="w-full   bg-bg  relative p-3 rounded-full flex-row-reverse justify-between flex items-center h-full">
+          <div className="w-full max-md:h-14 max-md:w-auto  bg-bg  relative p-5 rounded-full flex-row-reverse justify-between flex items-center h-full">
             <div className="flex max-xl:hidden  md:w-[40%] max-md:w-auto  flex-row-reverse items-center">
               <img
                 className="w-9 mx-3 h-9 rounded-full"
